@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class WorldClockViewController: UIViewController {
     @IBOutlet weak var tableView : UITableView!
@@ -25,6 +26,8 @@ class WorldClockViewController: UIViewController {
         super.viewDidLoad()
         setupBarButtonsItems()
         registerCells()
+        getPosts(for: 10)
+        getPostsAlamofire(userId: 3)
 
         // Do any additional setup after loading the view.
     }
@@ -46,6 +49,59 @@ class WorldClockViewController: UIViewController {
         let cellNib = UINib(nibName: indentifier, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "worldcell")
 
+    }
+    internal func getPosts(for userId:Int)
+    {
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "jsonplaceholder.typicode.com"
+        urlComponents.path = "/posts"
+        
+        let userIdItem = URLQueryItem(name: "userId", value: "\(userId)")
+        urlComponents.queryItems = [userIdItem]
+        guard let url = urlComponents.url else {
+            fatalError("Could not create URL")
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: request)
+        {
+            (responseData: Data?, response:URLResponse?, error: Error?) in
+            if let errorResponse = error {
+                print("Error:",errorResponse.localizedDescription)
+            }
+            else if let jsonData = responseData
+            {
+                let decoder = JSONDecoder()
+                do {
+                    let posts = try decoder.decode([Post].self, from: jsonData)
+                    print("Total posts", posts.count)
+                    print("Post 1:", posts.index(after: 1))
+                }
+                catch let error{
+                    print("Error decoding [Post]:",error.localizedDescription)
+                }
+            }
+            
+        }
+        task.resume()
+    }
+    internal func getPostsAlamofire(userId: Int)
+    {
+        Alamofire.request("https://jsonplaceholder.typicode.com/posts",method: HTTPMethod.get, parameters: ["userId":userId], encoding:URLEncoding.default, headers: nil).responseData{ (response) in
+            if let jsonData = response.data {
+                let decoder = JSONDecoder()
+                do {
+                    let posts = try decoder.decode([Post].self, from: jsonData)
+                    print("Total posts Alamofire", posts.count)
+                }
+                catch let error{
+                    print("Error decoding [Post]:",error.localizedDescription)
+                }
+            }
+        }
     }
     
 
