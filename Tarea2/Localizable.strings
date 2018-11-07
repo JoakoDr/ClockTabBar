@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Tarea2
+
+  Created by JOAQUIN DIAZ RAMIREZ on 7/11/18.
+  Copyright © 2018 JOAQUIN DIAZ RAMIREZ. All rights reserved.
+*/
+"title_worldClock" = "World Clock";
+"title_stopwatch" = "Stopwatch";
+"title_bedtime" = "Bedtime";
+"title_timer" = "Timer";
+"title_alarm" = "Alarm";

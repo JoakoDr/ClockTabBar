@@ -14,8 +14,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {window = UIWindow (frame: UIScreen.main.bounds)
+        if let window = window {
+            window.tintColor = ColorStyle.tintColor()
+            Style.customize()
+            
+            //Creo las variables para cada uno de los ViewControllers
+            let timerVC = TimerViewController()
+            let stopwatchVC = StopWatchViewController()
+            let bedtimeVC = BedtimeViewController()
+            let alarmVC = AlarmViewController()
+            let worldClockVC = WorldClockViewController()
+            
+            
+            //Declaro el tabController y le meto el menu
+            let tabController = UITabBarController()
+            let starNavigationController = UINavigationController(rootViewController: timerVC)
+            let twitchNavigationController1 = UINavigationController(rootViewController: stopwatchVC)
+            let penguinNavigationController2 = UINavigationController(rootViewController: bedtimeVC)
+            let collaborateNavigationController3 = UINavigationController(rootViewController: alarmVC)
+            let collaborateNavigationController4 = UINavigationController(rootViewController: worldClockVC)
+            tabController.viewControllers = [collaborateNavigationController4,collaborateNavigationController3,penguinNavigationController2,twitchNavigationController1,starNavigationController]
+            window.rootViewController = tabController
+            window.makeKeyAndVisible()
+        }
         return true
     }
 

@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A431B7FD2192F0B200CD6E8C /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B7FB2192F0B200CD6E8C /* TimerViewController.swift */; };
+		A431B7FE2192F0B200CD6E8C /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A431B7FC2192F0B200CD6E8C /* TimerViewController.xib */; };
+		A431B8012192F0D500CD6E8C /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B7FF2192F0D500CD6E8C /* StopWatchViewController.swift */; };
+		A431B8022192F0D500CD6E8C /* StopWatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A431B8002192F0D500CD6E8C /* StopWatchViewController.xib */; };
+		A431B8052192F0E800CD6E8C /* BedtimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B8032192F0E800CD6E8C /* BedtimeViewController.swift */; };
+		A431B8062192F0E800CD6E8C /* BedtimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A431B8042192F0E800CD6E8C /* BedtimeViewController.xib */; };
+		A431B8092192F10000CD6E8C /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B8072192F10000CD6E8C /* AlarmViewController.swift */; };
+		A431B80A2192F10000CD6E8C /* AlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A431B8082192F10000CD6E8C /* AlarmViewController.xib */; };
+		A431B80D2192F11200CD6E8C /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B80B2192F11200CD6E8C /* WorldClockViewController.swift */; };
+		A431B80E2192F11200CD6E8C /* WorldClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A431B80C2192F11200CD6E8C /* WorldClockViewController.xib */; };
+		A431B8102192F55800CD6E8C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A431B80F2192F55800CD6E8C /* Localizable.strings */; };
+		A431B8132192F89C00CD6E8C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B8122192F89C00CD6E8C /* Style.swift */; };
+		A431B8152192F8A900CD6E8C /* ColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B8142192F8A900CD6E8C /* ColorStyle.swift */; };
+		A431B8192192FE0B00CD6E8C /* WorldClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B8172192FE0B00CD6E8C /* WorldClockTableViewCell.swift */; };
+		A431B81A2192FE0B00CD6E8C /* WorldClockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A431B8182192FE0B00CD6E8C /* WorldClockTableViewCell.xib */; };
+		A431B81E2192FE3D00CD6E8C /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B81C2192FE3D00CD6E8C /* AlarmTableViewCell.swift */; };
+		A431B81F2192FE3D00CD6E8C /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A431B81D2192FE3D00CD6E8C /* AlarmTableViewCell.xib */; };
 		A4FBE04D2189E43B002306AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FBE04C2189E43B002306AC /* AppDelegate.swift */; };
 		A4FBE04F2189E43B002306AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FBE04E2189E43B002306AC /* ViewController.swift */; };
-		A4FBE0522189E43B002306AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FBE0502189E43B002306AC /* Main.storyboard */; };
 		A4FBE0542189E440002306AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FBE0532189E440002306AC /* Assets.xcassets */; };
 		A4FBE0572189E440002306AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FBE0552189E440002306AC /* LaunchScreen.storyboard */; };
 		A4FBE0622189E440002306AC /* Tarea2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FBE0612189E440002306AC /* Tarea2Tests.swift */; };
@@ -34,10 +50,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A431B7FB2192F0B200CD6E8C /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		A431B7FC2192F0B200CD6E8C /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		A431B7FF2192F0D500CD6E8C /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
+		A431B8002192F0D500CD6E8C /* StopWatchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopWatchViewController.xib; sourceTree = "<group>"; };
+		A431B8032192F0E800CD6E8C /* BedtimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeViewController.swift; sourceTree = "<group>"; };
+		A431B8042192F0E800CD6E8C /* BedtimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BedtimeViewController.xib; sourceTree = "<group>"; };
+		A431B8072192F10000CD6E8C /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		A431B8082192F10000CD6E8C /* AlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmViewController.xib; sourceTree = "<group>"; };
+		A431B80B2192F11200CD6E8C /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
+		A431B80C2192F11200CD6E8C /* WorldClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorldClockViewController.xib; sourceTree = "<group>"; };
+		A431B80F2192F55800CD6E8C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A431B8122192F89C00CD6E8C /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		A431B8142192F8A900CD6E8C /* ColorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStyle.swift; sourceTree = "<group>"; };
+		A431B8172192FE0B00CD6E8C /* WorldClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewCell.swift; sourceTree = "<group>"; };
+		A431B8182192FE0B00CD6E8C /* WorldClockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorldClockTableViewCell.xib; sourceTree = "<group>"; };
+		A431B81C2192FE3D00CD6E8C /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		A431B81D2192FE3D00CD6E8C /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
 		A4FBE0492189E43B002306AC /* Tarea2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarea2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FBE04C2189E43B002306AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4FBE04E2189E43B002306AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A4FBE0512189E43B002306AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4FBE0532189E440002306AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4FBE0562189E440002306AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4FBE0582189E440002306AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +106,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A431B8112192F86200CD6E8C /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				A431B8122192F89C00CD6E8C /* Style.swift */,
+				A431B8142192F8A900CD6E8C /* ColorStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		A431B8162192FD8C00CD6E8C /* WorldClockCell */ = {
+			isa = PBXGroup;
+			children = (
+				A431B8172192FE0B00CD6E8C /* WorldClockTableViewCell.swift */,
+				A431B8182192FE0B00CD6E8C /* WorldClockTableViewCell.xib */,
+			);
+			path = WorldClockCell;
+			sourceTree = "<group>";
+		};
+		A431B81B2192FE2300CD6E8C /* AlarmCell */ = {
+			isa = PBXGroup;
+			children = (
+				A431B81C2192FE3D00CD6E8C /* AlarmTableViewCell.swift */,
+				A431B81D2192FE3D00CD6E8C /* AlarmTableViewCell.xib */,
+			);
+			path = AlarmCell;
+			sourceTree = "<group>";
+		};
 		A4FBE0402189E43B002306AC = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +156,20 @@
 		A4FBE04B2189E43B002306AC /* Tarea2 */ = {
 			isa = PBXGroup;
 			children = (
+				A431B81B2192FE2300CD6E8C /* AlarmCell */,
+				A431B8162192FD8C00CD6E8C /* WorldClockCell */,
+				A431B8112192F86200CD6E8C /* Style */,
+				A4FBE07E2189E58A002306AC /* TimerViewController */,
+				A4FBE07D2189E56C002306AC /* StopwatchViewController */,
+				A4FBE07C2189E478002306AC /* BedtimeViewController */,
+				A4FBE07B2189E469002306AC /* AlarmViewController */,
+				A4FBE07A2189E44E002306AC /* WorldClockViewController */,
 				A4FBE04C2189E43B002306AC /* AppDelegate.swift */,
 				A4FBE04E2189E43B002306AC /* ViewController.swift */,
-				A4FBE0502189E43B002306AC /* Main.storyboard */,
 				A4FBE0532189E440002306AC /* Assets.xcassets */,
 				A4FBE0552189E440002306AC /* LaunchScreen.storyboard */,
 				A4FBE0582189E440002306AC /* Info.plist */,
+				A431B80F2192F55800CD6E8C /* Localizable.strings */,
 			);
 			path = Tarea2;
 			sourceTree = "<group>";
@@ -123,6 +190,51 @@
 				A4FBE06E2189E440002306AC /* Info.plist */,
 			);
 			path = Tarea2UITests;
+			sourceTree = "<group>";
+		};
+		A4FBE07A2189E44E002306AC /* WorldClockViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A431B80B2192F11200CD6E8C /* WorldClockViewController.swift */,
+				A431B80C2192F11200CD6E8C /* WorldClockViewController.xib */,
+			);
+			path = WorldClockViewController;
+			sourceTree = "<group>";
+		};
+		A4FBE07B2189E469002306AC /* AlarmViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A431B8072192F10000CD6E8C /* AlarmViewController.swift */,
+				A431B8082192F10000CD6E8C /* AlarmViewController.xib */,
+			);
+			path = AlarmViewController;
+			sourceTree = "<group>";
+		};
+		A4FBE07C2189E478002306AC /* BedtimeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A431B8032192F0E800CD6E8C /* BedtimeViewController.swift */,
+				A431B8042192F0E800CD6E8C /* BedtimeViewController.xib */,
+			);
+			path = BedtimeViewController;
+			sourceTree = "<group>";
+		};
+		A4FBE07D2189E56C002306AC /* StopwatchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A431B7FF2192F0D500CD6E8C /* StopWatchViewController.swift */,
+				A431B8002192F0D500CD6E8C /* StopWatchViewController.xib */,
+			);
+			path = StopwatchViewController;
+			sourceTree = "<group>";
+		};
+		A4FBE07E2189E58A002306AC /* TimerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A431B7FB2192F0B200CD6E8C /* TimerViewController.swift */,
+				A431B7FC2192F0B200CD6E8C /* TimerViewController.xib */,
+			);
+			path = TimerViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +341,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A431B80A2192F10000CD6E8C /* AlarmViewController.xib in Resources */,
+				A431B81A2192FE0B00CD6E8C /* WorldClockTableViewCell.xib in Resources */,
+				A431B80E2192F11200CD6E8C /* WorldClockViewController.xib in Resources */,
+				A431B8062192F0E800CD6E8C /* BedtimeViewController.xib in Resources */,
+				A431B8022192F0D500CD6E8C /* StopWatchViewController.xib in Resources */,
+				A431B81F2192FE3D00CD6E8C /* AlarmTableViewCell.xib in Resources */,
+				A431B7FE2192F0B200CD6E8C /* TimerViewController.xib in Resources */,
+				A431B8102192F55800CD6E8C /* Localizable.strings in Resources */,
 				A4FBE0572189E440002306AC /* LaunchScreen.storyboard in Resources */,
 				A4FBE0542189E440002306AC /* Assets.xcassets in Resources */,
-				A4FBE0522189E43B002306AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +375,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A431B8152192F8A900CD6E8C /* ColorStyle.swift in Sources */,
+				A431B8192192FE0B00CD6E8C /* WorldClockTableViewCell.swift in Sources */,
+				A431B8012192F0D500CD6E8C /* StopWatchViewController.swift in Sources */,
+				A431B80D2192F11200CD6E8C /* WorldClockViewController.swift in Sources */,
 				A4FBE04F2189E43B002306AC /* ViewController.swift in Sources */,
+				A431B8092192F10000CD6E8C /* AlarmViewController.swift in Sources */,
+				A431B7FD2192F0B200CD6E8C /* TimerViewController.swift in Sources */,
+				A431B81E2192FE3D00CD6E8C /* AlarmTableViewCell.swift in Sources */,
 				A4FBE04D2189E43B002306AC /* AppDelegate.swift in Sources */,
+				A431B8052192F0E800CD6E8C /* BedtimeViewController.swift in Sources */,
+				A431B8132192F89C00CD6E8C /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +421,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A4FBE0502189E43B002306AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4FBE0512189E43B002306AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A4FBE0552189E440002306AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
