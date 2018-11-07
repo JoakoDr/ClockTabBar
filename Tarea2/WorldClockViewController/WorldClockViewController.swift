@@ -11,13 +11,22 @@ import Alamofire
 
 class WorldClockViewController: UIViewController {
     @IBOutlet weak var tableView : UITableView!
+    @IBOutlet weak var txtField: UITextField!
+    @IBOutlet weak var button: UIButton!
+    var txtLol:Int?
+    
     init() {
         super.init(nibName: "WorldClockViewController", bundle: nil)
         self.tabBarItem.image = UIImage(named:"world")
         self.title = NSLocalizedString("title_worldClock" , comment: "")
-        
     }
-    
+    @IBAction func onClick(_ sender: UIButton, forEvent event: UIEvent){
+        let currLabelText = txtField.text;
+        txtLol = Int(currLabelText!)
+        getPosts(for: txtLol!)
+        getPostsAlamofire(userId: txtLol!)
+       
+    }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -26,8 +35,7 @@ class WorldClockViewController: UIViewController {
         super.viewDidLoad()
         setupBarButtonsItems()
         registerCells()
-        getPosts(for: 10)
-        getPostsAlamofire(userId: 3)
+       
 
         // Do any additional setup after loading the view.
     }
