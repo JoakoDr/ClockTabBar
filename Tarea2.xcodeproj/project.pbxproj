@@ -31,6 +31,20 @@
 		A4A87306219C348200D57411 /* NewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A87304219C348200D57411 /* NewTableViewController.swift */; };
 		A4A87307219C348200D57411 /* NewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A87305219C348200D57411 /* NewTableViewController.xib */; };
 		A4A87309219C37C400D57411 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A87308219C37C400D57411 /* Comment.swift */; };
+		A4A8730B219C49F400D57411 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8730A219C49F400D57411 /* Users.swift */; };
+		A4A8730D219C4AAA00D57411 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8730C219C4AAA00D57411 /* Company.swift */; };
+		A4A87310219C4BA400D57411 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8730F219C4BA400D57411 /* Address.swift */; };
+		A4A87312219C4C3400D57411 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A87311219C4C3400D57411 /* Geo.swift */; };
+		A4A87316219C4F5A00D57411 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A87314219C4F5A00D57411 /* UsersTableViewCell.swift */; };
+		A4A87317219C4F5A00D57411 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A87315219C4F5A00D57411 /* UsersTableViewCell.xib */; };
+		A4A8731B219C515100D57411 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A87319219C515100D57411 /* UsersViewController.swift */; };
+		A4A8731C219C515100D57411 /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A8731A219C515100D57411 /* UsersViewController.xib */; };
+		A4A87320219C528700D57411 /* DatosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A8731E219C528700D57411 /* DatosTableViewCell.swift */; };
+		A4A87321219C528700D57411 /* DatosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A8731F219C528700D57411 /* DatosTableViewCell.xib */; };
+		A4A87325219C53D600D57411 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A87323219C53D600D57411 /* AddressTableViewCell.swift */; };
+		A4A87326219C53D600D57411 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A87324219C53D600D57411 /* AddressTableViewCell.xib */; };
+		A4A8732A219C540400D57411 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A87328219C540400D57411 /* CompanyTableViewCell.swift */; };
+		A4A8732B219C540400D57411 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A87329219C540400D57411 /* CompanyTableViewCell.xib */; };
 		A4FBE04D2189E43B002306AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FBE04C2189E43B002306AC /* AppDelegate.swift */; };
 		A4FBE04F2189E43B002306AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FBE04E2189E43B002306AC /* ViewController.swift */; };
 		A4FBE0542189E440002306AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FBE0532189E440002306AC /* Assets.xcassets */; };
@@ -82,6 +96,20 @@
 		A4A87304219C348200D57411 /* NewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewController.swift; sourceTree = "<group>"; };
 		A4A87305219C348200D57411 /* NewTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTableViewController.xib; sourceTree = "<group>"; };
 		A4A87308219C37C400D57411 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		A4A8730A219C49F400D57411 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		A4A8730C219C4AAA00D57411 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		A4A8730F219C4BA400D57411 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		A4A87311219C4C3400D57411 /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
+		A4A87314219C4F5A00D57411 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		A4A87315219C4F5A00D57411 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
+		A4A87319219C515100D57411 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		A4A8731A219C515100D57411 /* UsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersViewController.xib; sourceTree = "<group>"; };
+		A4A8731E219C528700D57411 /* DatosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosTableViewCell.swift; sourceTree = "<group>"; };
+		A4A8731F219C528700D57411 /* DatosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatosTableViewCell.xib; sourceTree = "<group>"; };
+		A4A87323219C53D600D57411 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		A4A87324219C53D600D57411 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
+		A4A87328219C540400D57411 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		A4A87329219C540400D57411 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
 		A4FBE0492189E43B002306AC /* Tarea2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarea2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FBE04C2189E43B002306AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4FBE04E2189E43B002306AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +199,10 @@
 			children = (
 				A431B82121930D5700CD6E8C /* Post.swift */,
 				A4A87308219C37C400D57411 /* Comment.swift */,
+				A4A8730A219C49F400D57411 /* Users.swift */,
+				A4A8730C219C4AAA00D57411 /* Company.swift */,
+				A4A8730F219C4BA400D57411 /* Address.swift */,
+				A4A87311219C4C3400D57411 /* Geo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,6 +214,51 @@
 				A4A87305219C348200D57411 /* NewTableViewController.xib */,
 			);
 			path = NewTableViewController;
+			sourceTree = "<group>";
+		};
+		A4A87313219C4F3B00D57411 /* UsersCells */ = {
+			isa = PBXGroup;
+			children = (
+				A4A87314219C4F5A00D57411 /* UsersTableViewCell.swift */,
+				A4A87315219C4F5A00D57411 /* UsersTableViewCell.xib */,
+			);
+			path = UsersCells;
+			sourceTree = "<group>";
+		};
+		A4A87318219C512C00D57411 /* UsersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4A87319219C515100D57411 /* UsersViewController.swift */,
+				A4A8731A219C515100D57411 /* UsersViewController.xib */,
+			);
+			path = UsersViewController;
+			sourceTree = "<group>";
+		};
+		A4A8731D219C526100D57411 /* DatosCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4A8731E219C528700D57411 /* DatosTableViewCell.swift */,
+				A4A8731F219C528700D57411 /* DatosTableViewCell.xib */,
+			);
+			path = DatosCell;
+			sourceTree = "<group>";
+		};
+		A4A87322219C53B200D57411 /* AddressCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4A87323219C53D600D57411 /* AddressTableViewCell.swift */,
+				A4A87324219C53D600D57411 /* AddressTableViewCell.xib */,
+			);
+			path = AddressCell;
+			sourceTree = "<group>";
+		};
+		A4A87327219C53EE00D57411 /* CompanyCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4A87328219C540400D57411 /* CompanyTableViewCell.swift */,
+				A4A87329219C540400D57411 /* CompanyTableViewCell.xib */,
+			);
+			path = CompanyCell;
 			sourceTree = "<group>";
 		};
 		A4FBE0402189E43B002306AC = {
@@ -209,6 +286,11 @@
 		A4FBE04B2189E43B002306AC /* Tarea2 */ = {
 			isa = PBXGroup;
 			children = (
+				A4A87327219C53EE00D57411 /* CompanyCell */,
+				A4A87322219C53B200D57411 /* AddressCell */,
+				A4A8731D219C526100D57411 /* DatosCell */,
+				A4A87318219C512C00D57411 /* UsersViewController */,
+				A4A87313219C4F3B00D57411 /* UsersCells */,
 				A4A872FF219C340A00D57411 /* NewTableViewController */,
 				A431B82021930D4300CD6E8C /* Models */,
 				A431B81B2192FE2300CD6E8C /* AlarmCell */,
@@ -414,14 +496,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A431B80A2192F10000CD6E8C /* AlarmViewController.xib in Resources */,
+				A4A87326219C53D600D57411 /* AddressTableViewCell.xib in Resources */,
 				A431B81A2192FE0B00CD6E8C /* WorldClockTableViewCell.xib in Resources */,
+				A4A8732B219C540400D57411 /* CompanyTableViewCell.xib in Resources */,
 				A4A87307219C348200D57411 /* NewTableViewController.xib in Resources */,
 				A431B80E2192F11200CD6E8C /* WorldClockViewController.xib in Resources */,
 				A431B8062192F0E800CD6E8C /* BedtimeViewController.xib in Resources */,
+				A4A87321219C528700D57411 /* DatosTableViewCell.xib in Resources */,
 				A431B8022192F0D500CD6E8C /* StopWatchViewController.xib in Resources */,
 				A431B81F2192FE3D00CD6E8C /* AlarmTableViewCell.xib in Resources */,
 				A431B7FE2192F0B200CD6E8C /* TimerViewController.xib in Resources */,
+				A4A87317219C4F5A00D57411 /* UsersTableViewCell.xib in Resources */,
 				A431B8102192F55800CD6E8C /* Localizable.strings in Resources */,
+				A4A8731C219C515100D57411 /* UsersViewController.xib in Resources */,
 				A4FBE0572189E440002306AC /* LaunchScreen.storyboard in Resources */,
 				A4FBE0542189E440002306AC /* Assets.xcassets in Resources */,
 			);
@@ -526,17 +613,26 @@
 				A431B8152192F8A900CD6E8C /* ColorStyle.swift in Sources */,
 				A4A87306219C348200D57411 /* NewTableViewController.swift in Sources */,
 				A431B8192192FE0B00CD6E8C /* WorldClockTableViewCell.swift in Sources */,
+				A4A87316219C4F5A00D57411 /* UsersTableViewCell.swift in Sources */,
 				A4A87309219C37C400D57411 /* Comment.swift in Sources */,
 				A431B8012192F0D500CD6E8C /* StopWatchViewController.swift in Sources */,
 				A431B82221930D5700CD6E8C /* Post.swift in Sources */,
 				A431B80D2192F11200CD6E8C /* WorldClockViewController.swift in Sources */,
+				A4A8730B219C49F400D57411 /* Users.swift in Sources */,
 				A4FBE04F2189E43B002306AC /* ViewController.swift in Sources */,
 				A431B8092192F10000CD6E8C /* AlarmViewController.swift in Sources */,
 				A431B7FD2192F0B200CD6E8C /* TimerViewController.swift in Sources */,
 				A431B81E2192FE3D00CD6E8C /* AlarmTableViewCell.swift in Sources */,
+				A4A87310219C4BA400D57411 /* Address.swift in Sources */,
+				A4A8732A219C540400D57411 /* CompanyTableViewCell.swift in Sources */,
 				A4FBE04D2189E43B002306AC /* AppDelegate.swift in Sources */,
+				A4A87320219C528700D57411 /* DatosTableViewCell.swift in Sources */,
+				A4A87325219C53D600D57411 /* AddressTableViewCell.swift in Sources */,
 				A431B8052192F0E800CD6E8C /* BedtimeViewController.swift in Sources */,
 				A431B8132192F89C00CD6E8C /* Style.swift in Sources */,
+				A4A8731B219C515100D57411 /* UsersViewController.swift in Sources */,
+				A4A8730D219C4AAA00D57411 /* Company.swift in Sources */,
+				A4A87312219C4C3400D57411 /* Geo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
