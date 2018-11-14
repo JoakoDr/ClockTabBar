@@ -13,6 +13,7 @@ class WorldClockViewController: UIViewController {
     @IBOutlet weak var tableView : UITableView!
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var button: UIButton!
+    var posts:[Post] = []
     var txtLol:Int?
     
     init() {
@@ -21,11 +22,12 @@ class WorldClockViewController: UIViewController {
         self.title = NSLocalizedString("title_worldClock" , comment: "")
     }
     @IBAction func onClick(_ sender: UIButton, forEvent event: UIEvent){
+        if let text = txtField.text {
         let currLabelText = txtField.text;
         txtLol = Int(currLabelText!)
         getPosts(for: txtLol!)
         getPostsAlamofire(userId: txtLol!)
-       
+        }
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -77,21 +79,26 @@ class WorldClockViewController: UIViewController {
         let task = session.dataTask(with: request)
         {
             (responseData: Data?, response:URLResponse?, error: Error?) in
-            if let errorResponse = error {
-                print("Error:",errorResponse.localizedDescription)
-            }
-            else if let jsonData = responseData
-            {
-                let decoder = JSONDecoder()
-                do {
-                    let posts = try decoder.decode([Post].self, from: jsonData)
-                    print("Total posts", posts.count)
-                    print("Post 1:", posts.index(after: 1))
+            
+            DispatchQueue.main.async {
+                if let errorResponse = error {
+                    print("Error:",errorResponse.localizedDescription)
                 }
-                catch let error{
-                    print("Error decoding [Post]:",error.localizedDescription)
+                else if let jsonData = responseData
+                {
+                    let decoder = JSONDecoder()
+                    do {
+                        self.posts   = try decoder.decode([Post].self, from: jsonData)
+                        print("Total posts", self.posts.count)
+                        print("Post 1 :", self.posts.index(after: 1))
+                        self.tableView.reloadData()
+                    }
+                    catch let error{
+                        print("Error decoding [Post]:",error.localizedDescription)
+                    }
                 }
             }
+          
             
         }
         task.resume()
@@ -104,6 +111,8 @@ class WorldClockViewController: UIViewController {
                 do {
                     let posts = try decoder.decode([Post].self, from: jsonData)
                     print("Total posts Alamofire", posts.count)
+                    let cell = WorldClockTableViewCell()
+                    
                 }
                 catch let error{
                     print("Error decoding [Post]:",error.localizedDescription)
@@ -135,15 +144,27 @@ extension WorldClockViewController: UITableViewDelegate,UITableViewDataSource
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-            return 1
+            return posts.count
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let tableVC = NewTableViewController(postId: indexPath.row)
+        navigationController?.pushViewController(tableVC, animated: true)
+        
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 105.0
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let arrPosts = posts[indexPath.row]
             let cell: WorldClockTableViewCell = (tableView.dequeueReusableCell(withIdentifier: "worldcell", for: indexPath) as? WorldClockTableViewCell)!
+            
+            cell.lblCiudad?.text = arrPosts.title
+        
+            
+            
+        
             return cell
     
     

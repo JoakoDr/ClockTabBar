@@ -28,6 +28,9 @@
 		A431B81E2192FE3D00CD6E8C /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B81C2192FE3D00CD6E8C /* AlarmTableViewCell.swift */; };
 		A431B81F2192FE3D00CD6E8C /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A431B81D2192FE3D00CD6E8C /* AlarmTableViewCell.xib */; };
 		A431B82221930D5700CD6E8C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A431B82121930D5700CD6E8C /* Post.swift */; };
+		A4A87306219C348200D57411 /* NewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A87304219C348200D57411 /* NewTableViewController.swift */; };
+		A4A87307219C348200D57411 /* NewTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A87305219C348200D57411 /* NewTableViewController.xib */; };
+		A4A87309219C37C400D57411 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A87308219C37C400D57411 /* Comment.swift */; };
 		A4FBE04D2189E43B002306AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FBE04C2189E43B002306AC /* AppDelegate.swift */; };
 		A4FBE04F2189E43B002306AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FBE04E2189E43B002306AC /* ViewController.swift */; };
 		A4FBE0542189E440002306AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FBE0532189E440002306AC /* Assets.xcassets */; };
@@ -76,6 +79,9 @@
 		A431B81C2192FE3D00CD6E8C /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
 		A431B81D2192FE3D00CD6E8C /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
 		A431B82121930D5700CD6E8C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A4A87304219C348200D57411 /* NewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewController.swift; sourceTree = "<group>"; };
+		A4A87305219C348200D57411 /* NewTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTableViewController.xib; sourceTree = "<group>"; };
+		A4A87308219C37C400D57411 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		A4FBE0492189E43B002306AC /* Tarea2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarea2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FBE04C2189E43B002306AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4FBE04E2189E43B002306AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,8 +170,18 @@
 			isa = PBXGroup;
 			children = (
 				A431B82121930D5700CD6E8C /* Post.swift */,
+				A4A87308219C37C400D57411 /* Comment.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A4A872FF219C340A00D57411 /* NewTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4A87304219C348200D57411 /* NewTableViewController.swift */,
+				A4A87305219C348200D57411 /* NewTableViewController.xib */,
+			);
+			path = NewTableViewController;
 			sourceTree = "<group>";
 		};
 		A4FBE0402189E43B002306AC = {
@@ -193,6 +209,7 @@
 		A4FBE04B2189E43B002306AC /* Tarea2 */ = {
 			isa = PBXGroup;
 			children = (
+				A4A872FF219C340A00D57411 /* NewTableViewController */,
 				A431B82021930D4300CD6E8C /* Models */,
 				A431B81B2192FE2300CD6E8C /* AlarmCell */,
 				A431B8162192FD8C00CD6E8C /* WorldClockCell */,
@@ -398,6 +415,7 @@
 			files = (
 				A431B80A2192F10000CD6E8C /* AlarmViewController.xib in Resources */,
 				A431B81A2192FE0B00CD6E8C /* WorldClockTableViewCell.xib in Resources */,
+				A4A87307219C348200D57411 /* NewTableViewController.xib in Resources */,
 				A431B80E2192F11200CD6E8C /* WorldClockViewController.xib in Resources */,
 				A431B8062192F0E800CD6E8C /* BedtimeViewController.xib in Resources */,
 				A431B8022192F0D500CD6E8C /* StopWatchViewController.xib in Resources */,
@@ -431,15 +449,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tarea2/Pods-Tarea2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
@@ -453,15 +467,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Tarea2Tests-checkManifestLockResult.txt",
 			);
@@ -475,15 +485,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Tarea2UITests-checkManifestLockResult.txt",
 			);
@@ -497,15 +503,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Tarea2-checkManifestLockResult.txt",
 			);
@@ -522,7 +524,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A431B8152192F8A900CD6E8C /* ColorStyle.swift in Sources */,
+				A4A87306219C348200D57411 /* NewTableViewController.swift in Sources */,
 				A431B8192192FE0B00CD6E8C /* WorldClockTableViewCell.swift in Sources */,
+				A4A87309219C37C400D57411 /* Comment.swift in Sources */,
 				A431B8012192F0D500CD6E8C /* StopWatchViewController.swift in Sources */,
 				A431B82221930D5700CD6E8C /* Post.swift in Sources */,
 				A431B80D2192F11200CD6E8C /* WorldClockViewController.swift in Sources */,

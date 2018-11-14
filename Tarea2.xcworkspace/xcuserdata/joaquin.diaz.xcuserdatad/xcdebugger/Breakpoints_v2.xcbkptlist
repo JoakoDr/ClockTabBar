@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tarea2/WorldClockViewController/WorldClockViewController.swift"
-            timestampString = "563290795.3107131"
+            timestampString = "563888635.207823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "getPostsAlamofire(userId:)"
             landmarkType = "7">
          </BreakpointContent>
